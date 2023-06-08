@@ -9,12 +9,13 @@ pipeline {
         stage('install') {
             steps {
                 bat 'npm install'
-                bat 'cypress install'
+                // bat 'cypress install'
             }
         }
         stage('Test') {
             steps {
-                bat 'npx cypress open'
+                // bat 'npx cypress open'
+                bat './node_modules/.bin/cypress run'
             }
         }
     }
