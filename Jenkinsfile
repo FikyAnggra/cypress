@@ -14,8 +14,8 @@ pipeline {
         }
         stage('Test') {
             steps {
-                // bat 'npx cypress open'
-                bat './node_modules/.bin/cypress run'
+                bat 'npx cypress open'
+                // bat './node_modules/.bin/cypress run'
             }
         }
     }
